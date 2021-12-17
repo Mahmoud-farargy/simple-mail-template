@@ -1,0 +1,6 @@
+/* instagram font style*/
+@font-face{
+    font-family: Sansation;
+    src: url("./sansation/Sansation_Regular.ttf");
+    font-display: swap;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css" />
+    <link rel="stylesheet" href="./Assets/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <title>Mail Ipsum</title>
+</head>
+
+<body>  
+    <!-- app root -->
+    <div id="app">
+            <!-- header -->
+            <header class="header">
+                <div class="header--inner flex-row-center">
+                    <div class="logo--box flex-row-center">
+                        <div class="logo--box--inner flex-row">
+                            <img class="logo" src="./Assets/Electron-Builder.png" alt="logo" />
+                            <span>Mail Ipsum</span>  
+                        </div>
+                        <label class="nav--toggler with__active__effect" type="checkbox" for="navToggler" name="navToggler">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                    </div>
+                    <div class="header--toolbox--nav flex-row">
+                        <div class="header--middle flex-row-center">
+                            <form class="search--bar">
+                                <i class="fas fa-search"></i>
+                                <input type="text" autocomplete="true" spellcheck="true" id="searchBar" placeholder="Search here..." />
+                            </form>
+                        </div>
+                        <div class="header--right flex-row-center">
+                            <nav class="header--nav">
+                                <ul class="flex-row-center">
+                                    <li><a href="#"><i class="fas fa-inbox notified"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-question"></i></a></li>
+                                </ul>
+                            </nav>
+                            <div class="user--info flex-row-center">
+                                <span>John Alex</span>
+                                <i class="fas fa-ellipsis-v with__active__effect"></i>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </header> 
+
+        <main id="appLayout" class="flex-row">
+                <!-- nav toggler -->
+                <input type="checkbox" id="navToggler" name="navToggler" />
+            <!-- sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar--top">
+                    <div class="sidebar--top--inner flex-row">
+                        <button><i class="far fa-envelope"></i> <span>Compose Mail</span></button>   
+                    </div>
+                </div>
+                <nav class="sidebar--nav">
+                    <ul class="nav--group">
+                        <li class="active__route">
+                            <a href="#">
+                                <i class="fas fa-inbox"></i>
+                                <span>Inbox</span>
+                            </a>
+                            <span class="notifications__count"><i>2</i></span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-star"></i>
+                                <span>Starred</span>
+                            </a>
+                            <span class="notifications__count"></span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Sent</span>
+                            </a>
+                            <span class="notifications__count"></span>
+                        </li>
+                    </ul>
+                    <div class="nav--divider"></div>
+                    <ul class="nav--group">
+                        <li class="collapsable--nav--list">
+                            <div id="categoriesCollapser" class="flex-row-center">
+                                    <a href="#">
+                                        <i class="fas fa-stream"></i> 
+                                        <span>Categories</span>
+                                    </a>
+                                    <span >
+                                       <span class="notifications__count"></span>  
+                                       <i class="fas fa-angle-down categories--expansion--indicator"></i>    
+                                    </span>
+                            </div>
+
+                            <ul class="categories--nested--list">
+                                <li><a href="#">social</a></li>
+                                <li><a href="#">updates</a></li>
+                                <li><a href="#">Forums</a></li>
+                                <li><a href="#">Promotions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="nav--divider"></div>
+                    <ul class="nav--group">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                                <span>Trash</span>
+                            </a>
+                            <span class="notifications__count"></span>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- screens -->
+            <section id="screens">
+                <div class="screens--inner">
+                    <!-- message alert -->
+                    <div class="msg--alert flex-row"> 
+                        <span class="close__alert">&times;</span>
+                        <div class="message--text">
+                            <p>
+                                <strong>Welcome Back John,</strong>
+                                You have...
+                            </p>
+                            <br />
+                            <p>
+                                <strong class="highlight">2</strong>  
+                                New Mails
+                            </p>
+                        </div>
+                        <div class="message--art">
+                            <div class="art--circle">
+                                <img class="art__msg__woman" alt="" src="./Assets/958ec0eab3eb37adb05990e3848cdf75.png"/>
+                                <img class="art__msg__man" alt="" src="./Assets/060139968bece9aef2ef6c5a37c07486.png"/>
+                                <img class="art__woman" alt="" src="./Assets/531dca65ab46dd3497db791d394683af.png"/>
+                                <img class="art__man" alt="" src="./Assets/079ce535c5fac0b1ce00e9073f31480f.png"/>
+                                <img class="art__msg__evelope" alt="" src="./Assets/a2243d018b46805623d3606b695251f4.png"/>
+                                <img class="art__cam" alt="" src="./Assets/89f99aacda6576ec91ab957ff9654a57.png"/>
+                                <img class="art__notes" alt="" src="./Assets/7ec743c0b4843f529fd54a1ffdb56cbe.png">
+                                <img class="art__mic" alt="" src="./Assets/1afcfb9bcef2c232f504c30275015518.png">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- grid -->
+                    <div id="grid">
+                        <div class="grid--inner">
+                            <div class="grid--header grid-row flex-row">
+                                <div class="gr--header--left flex-row-center">
+                                    <input type="checkbox" name="grid--checkbox" />
+                                    <i class="fas fa-ellipsis-h"></i>
+                                </div>
+                                <div class="gr--header--right flex-row-center">
+                                    <select >
+                                        <option disabled selected>Sort by</option>
+                                        <option>option #1</option>
+                                        <option>option #2</option>
+                                    </select>
+                                    <div class="sort--btns flex-row">
+                                        <a href="./index.html">
+                                            <img src="./Assets/e0958343efb0f6c6346195f4654121c8.png" alt="sort up"/> 
+                                        </a>
+                                       <a href="./Static/index2.html">
+                                            <img src="./Assets/641b4a4e8b73e8cda65ac38c469f146d.png" alt="sort down"/>
+                                       </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div >
+                                <table id="gridData">
+                                    <tbody data-grid-type="1" class="grid--body">
+                                          <!-- data is statically generated from fixtures -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>  
+
+    </div>
+    <!-- Scripts -->
+    <script defer src="./Scripts/script.js" ></script>
+</body>
+
+</html>
