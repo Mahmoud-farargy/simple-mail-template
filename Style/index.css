@@ -433,8 +433,8 @@ table {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   z-index: var(--z-sidebar);

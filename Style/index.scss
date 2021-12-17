@@ -347,7 +347,7 @@ table {
       position: fixed;
       top: 0;
       left: 0;
-      transition: 0.3s linear;
+      transition: 0.3s ease-out;
       transition-property: width, background-color;
       z-index: var(--z-sidebar);
       padding: calc(var(--height-header) + 1rem) 0 1rem 0rem;
