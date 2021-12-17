@@ -3,60 +3,80 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <link rel="shortcut icon" type="image/x-icon" sizes="192×130" href="./Assets/Electron-Builder.png" />
     <link rel="stylesheet" href="./Style/index.css" />
     <link rel="stylesheet" href="./Assets/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <!-- Search Engine Optimization -->
+    <meta name="theme-color" content="#F6F6FA" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="description" content="An email template made specifically for Softxpert as an home assignment." />
+    <meta name="keywords" content="Softxpert, Mahmoud Farargy, HTML, javascript, css, task" />
+    <meta name="author" content="Mahmoud Farargy" />
+    <!-- Google / search engine tags -->
+    <meta itemprop="name" content="Mahmoud Farargy | Home task" />
+    <meta itemprop="description" content="An email template made specifically for Softxpert as an home assignment." />
+    <meta itemprop="image" content="./Assets/Screenshot/Screen Shot.png" />
+    <!-- Social media meta tags -->
+    <meta property="og:url" content="https://mahmoud-farargy.github.io/simple-mail-template" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mail Ipsum">
+    <meta property="og:title" content="Home assignment | Mahmoud Farargy | css | html " />
+    <meta property="og:image" content="./Assets/Screenshot/Screen Shot.png" />
     <title>Mail Ipsum</title>
 </head>
 
-<body>  
+<body>
     <!-- app root -->
     <div id="app">
-            <!-- header -->
-            <header class="header">
-                <div class="header--inner flex-row-center">
-                    <div class="logo--box flex-row-center">
-                        <div class="logo--box--inner flex-row">
-                            <img class="logo" src="./Assets/Electron-Builder.png" alt="logo" />
-                            <span>Mail Ipsum</span>  
-                        </div>
-                        <label class="nav--toggler with__active__effect" type="checkbox" for="navToggler" name="navToggler">
-                            <i class="fas fa-bars"></i>
-                        </label>
+        <!-- header -->
+        <header class="header">
+            <div class="header--inner flex-row-center">
+                <div class="logo--box flex-row-center">
+                    <div class="logo--box--inner flex-row">
+                        <img class="logo" src="./Assets/Electron-Builder.png" alt="logo" />
+                        <span>Mail Ipsum</span>
                     </div>
-                    <div class="header--toolbox--nav flex-row">
-                        <div class="header--middle flex-row-center">
-                            <form class="search--bar">
-                                <i class="fas fa-search"></i>
-                                <input type="text" autocomplete="true" spellcheck="true" id="searchBar" placeholder="Search here..." />
-                            </form>
+                    <label class="nav--toggler with__active__effect" type="checkbox" for="navToggler" name="navToggler">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+                <div class="header--toolbox--nav flex-row">
+                    <div class="header--middle flex-row-center">
+                        <form class="search--bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" autocomplete="true" spellcheck="true" id="searchBar"
+                                placeholder="Search here..." />
+                        </form>
+                    </div>
+                    <div class="header--right flex-row-center">
+                        <nav class="header--nav">
+                            <ul class="flex-row-center">
+                                <li><a href="#"><i class="fas fa-inbox notified"></i></a></li>
+                                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                                <li><a href="#"><i class="fas fa-question"></i></a></li>
+                            </ul>
+                        </nav>
+                        <div class="user--info flex-row-center">
+                            <span>John Alex</span>
+                            <i class="fas fa-ellipsis-v with__active__effect"></i>
                         </div>
-                        <div class="header--right flex-row-center">
-                            <nav class="header--nav">
-                                <ul class="flex-row-center">
-                                    <li><a href="#"><i class="fas fa-inbox notified"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-cog"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-question"></i></a></li>
-                                </ul>
-                            </nav>
-                            <div class="user--info flex-row-center">
-                                <span>John Alex</span>
-                                <i class="fas fa-ellipsis-v with__active__effect"></i>
-                            </div>
-                        </div>  
                     </div>
                 </div>
-            </header> 
+            </div>
+        </header>
 
         <main id="appLayout" class="flex-row">
-                <!-- nav toggler -->
-                <input type="checkbox" id="navToggler" name="navToggler" />
+            <!-- nav toggler -->
+            <input type="checkbox" id="navToggler" name="navToggler" />
             <!-- sidebar -->
             <aside id="sidebar">
                 <div class="sidebar--top">
                     <div class="sidebar--top--inner flex-row">
-                        <button><i class="far fa-envelope"></i> <span>Compose Mail</span></button>   
+                        <button><i class="far fa-envelope"></i> <span>Compose Mail</span></button>
                     </div>
                 </div>
                 <nav class="sidebar--nav">
@@ -87,14 +107,14 @@
                     <ul class="nav--group">
                         <li class="collapsable--nav--list">
                             <div id="categoriesCollapser" class="flex-row-center">
-                                    <a href="#">
-                                        <i class="fas fa-stream"></i> 
-                                        <span>Categories</span>
-                                    </a>
-                                    <span >
-                                       <span class="notifications__count"></span>  
-                                       <i class="fas fa-angle-down categories--expansion--indicator"></i>    
-                                    </span>
+                                <a href="#">
+                                    <i class="fas fa-stream"></i>
+                                    <span>Categories</span>
+                                </a>
+                                <span>
+                                    <span class="notifications__count"></span>
+                                    <i class="fas fa-angle-down categories--expansion--indicator"></i>
+                                </span>
                             </div>
 
                             <ul class="categories--nested--list">
@@ -121,7 +141,7 @@
             <section id="screens">
                 <div class="screens--inner">
                     <!-- message alert -->
-                    <div class="msg--alert flex-row"> 
+                    <div class="msg--alert flex-row">
                         <span class="close__alert">&times;</span>
                         <div class="message--text">
                             <p>
@@ -130,18 +150,20 @@
                             </p>
                             <br />
                             <p>
-                                <strong class="highlight">2</strong>  
+                                <strong class="highlight">2</strong>
                                 New Mails
                             </p>
                         </div>
                         <div class="message--art">
                             <div class="art--circle">
-                                <img class="art__msg__woman" alt="" src="./Assets/958ec0eab3eb37adb05990e3848cdf75.png"/>
-                                <img class="art__msg__man" alt="" src="./Assets/060139968bece9aef2ef6c5a37c07486.png"/>
-                                <img class="art__woman" alt="" src="./Assets/531dca65ab46dd3497db791d394683af.png"/>
-                                <img class="art__man" alt="" src="./Assets/079ce535c5fac0b1ce00e9073f31480f.png"/>
-                                <img class="art__msg__evelope" alt="" src="./Assets/a2243d018b46805623d3606b695251f4.png"/>
-                                <img class="art__cam" alt="" src="./Assets/89f99aacda6576ec91ab957ff9654a57.png"/>
+                                <img class="art__msg__woman" alt=""
+                                    src="./Assets/958ec0eab3eb37adb05990e3848cdf75.png" />
+                                <img class="art__msg__man" alt="" src="./Assets/060139968bece9aef2ef6c5a37c07486.png" />
+                                <img class="art__woman" alt="" src="./Assets/531dca65ab46dd3497db791d394683af.png" />
+                                <img class="art__man" alt="" src="./Assets/079ce535c5fac0b1ce00e9073f31480f.png" />
+                                <img class="art__msg__evelope" alt=""
+                                    src="./Assets/a2243d018b46805623d3606b695251f4.png" />
+                                <img class="art__cam" alt="" src="./Assets/89f99aacda6576ec91ab957ff9654a57.png" />
                                 <img class="art__notes" alt="" src="./Assets/7ec743c0b4843f529fd54a1ffdb56cbe.png">
                                 <img class="art__mic" alt="" src="./Assets/1afcfb9bcef2c232f504c30275015518.png">
                             </div>
@@ -156,25 +178,25 @@
                                     <i class="fas fa-ellipsis-h"></i>
                                 </div>
                                 <div class="gr--header--right flex-row-center">
-                                    <select >
+                                    <select>
                                         <option disabled selected>Sort by</option>
-                                        <option>option #1</option>
-                                        <option>option #2</option>
+                                        <option>Option #1</option>
+                                        <option>Option #2</option>
                                     </select>
                                     <div class="sort--btns flex-row">
                                         <a href="./index.html">
-                                            <img src="./Assets/e0958343efb0f6c6346195f4654121c8.png" alt="sort up"/> 
+                                            <img src="./Assets/e0958343efb0f6c6346195f4654121c8.png" alt="sort up" />
                                         </a>
-                                       <a href="./Static/index2.html">
-                                            <img src="./Assets/641b4a4e8b73e8cda65ac38c469f146d.png" alt="sort down"/>
-                                       </a>
+                                        <a href="./Static/index2.html">
+                                            <img src="./Assets/641b4a4e8b73e8cda65ac38c469f146d.png" alt="sort down" />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div >
+                            <div>
                                 <table id="gridData">
                                     <tbody data-grid-type="1" class="grid--body">
-                                          <!-- data is statically generated from fixtures -->
+                                        <!-- data is statically generated from fixtures -->
                                     </tbody>
                                 </table>
                             </div>
@@ -182,11 +204,11 @@
                     </div>
                 </div>
             </section>
-        </main>  
+        </main>
 
     </div>
     <!-- Scripts -->
-    <script defer src="./Scripts/script.js" ></script>
+    <script defer src="./Scripts/script.js"></script>
 </body>
 
 </html>

@@ -47,21 +47,21 @@ body,
   /* heights */
   --height-header: 50px;
   /* colors */
-  --primary-clr: #38A7A7;
-  --secondary-clr: #E4F5F5;
-  --tertiary-clr: #F9B52E;
+  --primary-clr: #38a7a7;
+  --secondary-clr: #e4f5f5;
+  --tertiary-clr: #f9b52e;
   --quaternary-clr: #ffffff;
-  --dark-gray: #B8B8B8;
+  --dark-gray: #b8b8b8;
   --ultra-white: #fff;
   --ultra-black: #000;
   --gray: #dbdbdb;
   --light-gray: #bababa;
   --lighter-gray: #e4e4e4;
-  --more-lighter-gray: #F6F6FA;
+  --more-lighter-gray: #f6f6fa;
   --text-gray: #74706b;
   --text-black: #4a525f;
   --text-dark-black: #363636;
-  --dark-green: #248C8C;
+  --dark-green: #248c8c;
   --light-red: #ed4956;
   --light-primary-clr: rgba(49, 194, 124, 0.12);
   --transparent-black: rgba(0, 0, 0, 0.1);
@@ -216,7 +216,8 @@ table {
 }
 
 @media only screen and (min-width: 670px) {
-  #app #navToggler:checked + aside#sidebar .sidebar--nav .nav--group span, #app #navToggler:checked + aside#sidebar .sidebar--top .sidebar--top--inner {
+  #app #navToggler:checked + aside#sidebar .sidebar--nav .nav--group span,
+  #app #navToggler:checked + aside#sidebar .sidebar--top .sidebar--top--inner {
     display: none;
   }
   #app #navToggler:checked + aside#sidebar .categories--nested--list.expanded {
@@ -560,7 +561,7 @@ table {
   border-radius: 50%;
   font-style: normal;
   text-align: center;
-  padding: 0.150rem 0.4rem;
+  padding: 0.15rem 0.4rem;
   background-color: var(--tertiary-clr);
   color: var(--ultra-white);
   font-size: var(--font-size-x-small);
@@ -696,15 +697,24 @@ table {
      object-fit: contain;
 }
 
-#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__woman, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__man, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__woman, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__man, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__evelope, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__cam, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__notes, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__mic {
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__woman,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__man,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__woman,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__man,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__evelope,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__cam,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__notes,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__mic {
   position: absolute;
 }
 
-#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__woman, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__man {
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__woman,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__man {
   width: 131px;
 }
 
-#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__woman, #app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__man {
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__woman,
+#app #appLayout section#screens .screens--inner .msg--alert .message--art .art--circle .art__msg__man {
   width: 50px;
 }
 
@@ -767,7 +777,7 @@ table {
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .grid--header {
-  color: #6F6F6F;
+  color: #6f6f6f;
   background-color: transparent;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -781,7 +791,7 @@ table {
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .grid--header .gr--header--left {
-  color: #6F6F6F;
+  color: #6f6f6f;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px 0;
@@ -791,7 +801,8 @@ table {
   margin-right: 0.7rem;
 }
 
-#app #appLayout section#screens .screens--inner #grid .grid--inner .grid--header .gr--header--left .upper--toolbox img, #app #appLayout section#screens .screens--inner #grid .grid--inner .grid--header .gr--header--left .upper--toolbox span {
+#app #appLayout section#screens .screens--inner #grid .grid--inner .grid--header .gr--header--left .upper--toolbox img,
+#app #appLayout section#screens .screens--inner #grid .grid--inner .grid--header .gr--header--left .upper--toolbox span {
   cursor: pointer;
 }
 
@@ -884,7 +895,7 @@ table {
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .grid-row input[type="checkbox"]:checked:after {
-  content: '\2713';
+  content: "\2713";
   color: white;
   position: absolute;
   top: 50%;
@@ -991,7 +1002,7 @@ table {
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid table tr {
   display: block;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid td.grid-td {
@@ -1000,7 +1011,7 @@ table {
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid table td {
   display: block;
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: right;
 }
 
@@ -1031,7 +1042,8 @@ table {
   color: var(--ultra-black);
 }
 
-#app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--header .env--tools img, #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--header .env--tools span {
+#app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--header .env--tools img,
+#app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--header .env--tools span {
   cursor: pointer;
 }
 
@@ -1044,7 +1056,7 @@ table {
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--header .env--tools span {
   font-size: 25px;
-  color: #C9C9C9;
+  color: #c9c9c9;
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top {
@@ -1058,15 +1070,16 @@ table {
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top .sender--info p {
-  color: #6F6F6F;
+  color: #6f6f6f;
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top .sender--info small {
-  color: #9E9E9E;
+  color: #9e9e9e;
   font-size: 13px;
 }
 
-#app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top .email--tools img, #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top .email--tools span {
+#app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top .email--tools img,
+#app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top .email--tools span {
   cursor: pointer;
 }
 
@@ -1078,12 +1091,12 @@ table {
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .body--top .email--tools span {
-  color: #6F6F6F;
+  color: #6f6f6f;
 }
 
 #app #appLayout section#screens .screens--inner #grid .grid--inner .reply--grid .reply--envelope .env--body .env--content {
   width: 100%;
-  margin-top: 2.5rem;
+  margin: 2.5rem 0;
   text-align: center;
 }
 
@@ -1138,11 +1151,11 @@ table {
   }
   #app #appLayout table tr {
     display: block;
-    margin-bottom: .2em;
+    margin-bottom: 0.2em;
   }
   #app #appLayout table td {
     display: block;
-    font-size: .9em;
+    font-size: 0.9em;
     text-align: right;
   }
   #app #appLayout table td:last-child {
@@ -1191,15 +1204,17 @@ table {
     padding-top: 0.6rem;
   }
   #app header.header .header--inner .header--toolbox--nav div.header--middle .search--bar input#searchBar {
-    width: 100%  !important;
+    width: 100% !important;
   }
-  #app header.header .header--toolbox--nav, #app header.header .header--inner {
+  #app header.header .header--toolbox--nav,
+  #app header.header .header--inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #app #appLayout aside#sidebar, #app #appLayout section#screens {
+  #app #appLayout aside#sidebar,
+  #app #appLayout section#screens {
     padding-top: 126px;
   }
   #app #appLayout aside#sidebar .sidebar--top button {
@@ -1208,8 +1223,8 @@ table {
   #app #appLayout section#screens .screens--inner .msg--alert {
     padding: 0.7rem 0.7rem;
   }
-  #app #appLayout .env--content img {
-    width: 90%;
+  #app .env--content img {
+    width: 90% !important;
   }
 }
 
@@ -1223,7 +1238,8 @@ table {
   #app #appLayout aside#sidebar:hover {
     width: var(--default-layout-size) !important;
   }
-  #app #appLayout aside#sidebar:hover .sidebar--nav .nav--group span, #app #appLayout aside#sidebar:hover .sidebar--top .sidebar--top--inner {
+  #app #appLayout aside#sidebar:hover .sidebar--nav .nav--group span,
+  #app #appLayout aside#sidebar:hover .sidebar--top .sidebar--top--inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
